@@ -15,18 +15,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Abode</a>
+  <a href="#" class="w3-bar-item w3-button w3-blue w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Abode</a>
   <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Rooms</a>
   <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
   <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Book Now</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-red w3-mobile">Book Now</a>
 </div>
 <!-- Header -->
 <header class="w3-display-container w3-content" style="max-width:1500px;">
-  <img class="w3-image" src="images/hotel.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+  <img class="w3-image" src="images/yuliya-pankevich-oyxsG2Lh_uA-unsplash.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
   <div class="w3-display-left w3-padding w3-col l6 m8">
     <div class="w3-container w3-light-blue">
-      <h2><i class="fa fa-bed w3-margin-right"></i>Abode Hotels and Resorts</h2>
+      <h2><i class="fa fa-bed w3-margin-right"></i>Abode Hotels and Resorts - Hawaii</h2>
     </div>
     <div class="w3-container w3-white w3-padding-16">
       <form action="/action_page.php" target="_blank">
@@ -81,8 +81,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <div class="w3-content" style="max-width:1532px;">
 
   <div class="w3-container w3-margin-top" id="rooms">
-    <h3>Rooms</h3>
-    <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+    <h2>Rooms</h3>
+    <p>"<strong>Mi casa es su casa</strong>" is our slogan.<br>
+      Sleep well, rest well, and make yourself at home!</p><br>
   </div>
   
   <div class="w3-row-padding">
@@ -95,16 +96,37 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY">
     </div>
     <div class="w3-col m2">
+      <!--
       <label><i class="fa fa-male"></i> Adults</label>
       <input class="w3-input w3-border" type="number" placeholder="1">
+      -->
+      <label for="adult-select"># of Adults?</label>
+            <select name="adults" id="adult-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+            </select>
     </div>
     <div class="w3-col m2">
+      <!--
       <label><i class="fa fa-child"></i> Kids</label>
       <input class="w3-input w3-border" type="number" placeholder="0">
+      -->
+      <label for="kids-select"># of Kids? <small>(3y+)</small></label>
+            <select name="kids" id="kids-select">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+            </select>
     </div>
     <div class="w3-col m2">
       <label><i class="fa fa-search"></i> Search</label>
-      <button class="w3-button w3-block w3-black">Search</button>
+      <button class="w3-button w3-block w3-red">Search</button>
     </div>
   </div>
 
@@ -114,10 +136,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <div class="w3-container w3-white">
         <h3>Single Room</h3>
         <h6 class="w3-opacity">From $99</h6>
-        <p>Single bed</p>
-        <p>15m<sup>2</sup></p>
+        <p>King-size bed</p>
+        <p>250 ft<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+        <button class="w3-button w3-block w3-red w3-margin-bottom">Choose Room</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -125,21 +147,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <div class="w3-container w3-white">
         <h3>Double Room</h3>
         <h6 class="w3-opacity">From $149</h6>
-        <p>Queen-size bed</p>
-        <p>25m<sup>2</sup></p>
+        <p>Queen-size beds</p>
+        <p>270 ft<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+        <button class="w3-button w3-block w3-red w3-margin-bottom">Choose Room</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
-      <img src="images/room_deluxe.jpg" alt="Norway" style="width:100%">
+      <img src="images/king-suite.jpg" alt="Norway" style="width:100%">
       <div class="w3-container w3-white">
-        <h3>Deluxe Room</h3>
+        <h3>King Suite</h3>
         <h6 class="w3-opacity">From $199</h6>
-        <p>King-size bed</p>
-        <p>40m<sup>2</sup></p>
+        <p>King-size bed with suite</p>
+        <p>430 ft<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+        <button class="w3-button w3-block w3-red w3-margin-bottom">Choose Room</button>
       </div>
     </div>
   </div>
@@ -147,23 +169,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <div class="w3-row-padding" id="about">
     <div class="w3-col l4 12">
       <h3>About</h3>
-      <h6>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+      <h6>Our hotel is one of a kind and truly amazing.<br><br>
+        In a place where natural beauty abounds, where the legendary lagoon beckons and craggy Mount Otemanu majestically overlooks those blue-green waters, one destination stands out among the rest, a private-island paradise created for travelers of discerning taste.<br><br>
+        With its unique culture, celebratory rituals and anticipatory Butler service, Abode - Hawaii offers uncompromising luxury at some of the finest addresses in the world.</h6>
     <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
     </div>
     <div class="w3-col l8 12">
       <!-- Image of location/map -->
-      <img src="images/map.jpg" class="w3-image w3-greyscale" style="width:100%;">
+      <img src="images/map.jpg" class="w3-image " style="width:100%;">
     </div>
   </div>
   
   <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
-    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> 423 Some adr, Chicago, US</div>
-    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: +00 151515</div>
+    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> 423 Some adr, Hawaii, US</div>
+    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: 281.555.7854</div>
     <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: mail@mail.com</div>
   </div>
 
   <div class="w3-panel w3-red w3-leftbar w3-padding-32">
-    <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</h6>
+    <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer video gamee consoles, child care, dog equipment, etc.</h6>
   </div>
 
   <div class="w3-container">
@@ -175,7 +199,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <div class="w3-half w3-margin-bottom">
       <div class="w3-display-container">
         <img src="images/cinqueterre.jpg" alt="Cinque Terre" style="width:100%">
-        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+        <span class="w3-display-bottomleft w3-padding">Barcelona</span>
       </div>
     </div>
     <div class="w3-half">
@@ -183,13 +207,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
             <img src="images/newyork2.jpg" alt="New York" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">New York</span>
+            <span class="w3-display-bottomleft w3-padding">Chicago</span>
           </div>
         </div>
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
             <img src="images/sanfran.jpg" alt="San Francisco" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">San Francisco</span>
+            <span class="w3-display-bottomleft w3-padding">Los Angeles</span>
           </div>
         </div>
       </div>
@@ -197,20 +221,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
             <img src="images/pisa.jpg" alt="Pisa" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">Pisa</span>
+            <span class="w3-display-bottomleft w3-padding">Rome</span>
           </div>
         </div>
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
             <img src="images/paris.jpg" alt="Paris" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">Paris</span>
+            <span class="w3-display-bottomleft w3-padding">London</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
+  <div class="w3-container w3-padding-32 w3-blue w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
     <h2>Get the best offers first!</h2>
     <p>Join our newsletter.</p>
     <label>E-mail</label>
@@ -221,14 +245,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <div class="w3-container" id="contact">
     <h2>Contact</h2>
     <p>If you have any questions, do not hesitate to ask them.</p>
-    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Chicago, US<br>
-    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +00 151515<br>
+    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Hawaii, US<br>
+    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: 281.555.7854<br>
     <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: mail@mail.com<br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Apologies, but message submissions are disabled at this time" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit" disabled="">SEND MESSAGE</button></p>
     </form>
   </div>
 
@@ -236,15 +260,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 </div>
 
 <!-- Footer -->
-<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+<footer class="w3-padding-32 w3-blue w3-center w3-margin-top">
   <h5>Find Us On</h5>
   <div class="w3-xlarge w3-padding-16">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
