@@ -2,6 +2,7 @@
 
 Hotel website that displays photos, forms, and style.
 
+<img src="https://namnguyendev.netlify.app/images/abode_hotel.png" alt="Screenshot of hotel website displaying a resort">
 
 ## How It's Made:
 
